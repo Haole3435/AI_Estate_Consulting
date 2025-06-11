@@ -1,0 +1,66 @@
+# Voice Estate Assistant
+
+Voice Estate là một ứng dụng trợ lý ảo thông minh hỗ trợ tư vấn bất động sản bằng giọng nói, sử dụng các công nghệ AI tiên tiến.
+
+## Tính năng
+
+- 🎙️ Tương tác bằng giọng nói tiếng Việt
+- 🤖 Sử dụng LLM (Llama 3.3 70B) cho phản hồi thông minh 
+- 🗣️ Chuyển đổi giọng nói thành văn bản (Speech-to-Text)
+- 🔊 Chuyển đổi văn bản thành giọng nói (Text-to-Speech)
+- 📚 Tư vấn bất động sản theo ngân sách và khu vực
+
+## Yêu cầu hệ thống
+
+- Python 3.8+
+- Các API keys:
+  - Groq API key
+  - ElevenLabs API key
+  - ElevenLabs Voice ID
+
+## Cài đặt
+
+1. Clone repository:
+```bash
+git clone [repository-url]
+cd voice_estate
+```
+
+2. Cài đặt dependencies:
+```bash
+pip install -r requirements.txt
+```
+
+3. Tạo file .env và cấu hình các API keys:
+```
+GROQ_API_KEY=your_groq_api_key
+ELEVENLABS_API_KEY=your_elevenlabs_api_key
+ELEVENLABS_VOICE_ID=your_voice_id
+```
+
+## Cấu hình
+
+Các cấu hình chính của ứng dụng nằm trong file `config.py`:
+
+- Model LLM: llama-3.3-70b-versatile
+- Model STT: whisper-large-v3-turbo
+- Model TTS: eleven_flash_v2_5
+
+## Sử dụng
+
+[Thêm hướng dẫn sử dụng cụ thể của ứng dụng]
+
+## Công nghệ sử dụng
+
+- **LLM**: Groq API với model Llama 3.3 70B
+- **Speech-to-Text**: Whisper large v3 turbo
+- **Text-to-Speech**: ElevenLabs API
+- **RAG (Retrieval Augmented Generation)**: Hỗ trợ truy xuất dữ liệu thông minh
+
+## Đóng góp
+
+Mọi đóng góp đều được chào đón! Vui lòng tạo issue hoặc pull request.
+
+## Giấy phép
+
+[Thêm thông tin về giấy phép]

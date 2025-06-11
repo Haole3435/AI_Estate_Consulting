@@ -1,0 +1,14 @@
+fastapi
+uvicorn[standard]
+python-dotenv
+fastrtc[vad]
+gradio
+fastrtc
+groq
+elevenlabs
+langchain-groq
+langgraph
+langchain
+langchain-community
+faiss-cpu
+sentence-transformers
