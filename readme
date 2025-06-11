@@ -12,7 +12,7 @@ Voice Estate là một ứng dụng trợ lý ảo thông minh hỗ trợ tư v�
 
 ## Yêu cầu hệ thống
 
-- Python 3.8+
+- Python 3.11
 - Các API keys:
   - Groq API key
   - ElevenLabs API key
@@ -60,4 +60,6 @@ Các cấu hình chính của ứng dụng nằm trong file `config.py`:
 ## Đóng góp
 
 Mọi đóng góp đều được chào đón! Vui lòng tạo issue hoặc pull request.
-
+## kết quả voice 
+![Demo](images/demo1.png)
+![Demo](images/demo2.png)

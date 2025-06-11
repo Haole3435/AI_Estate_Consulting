@@ -7,7 +7,7 @@ load_dotenv()
 GROQ_API_KEY = os.getenv("GROQ_API_KEY")
 ELEVENLABS_API_KEY = os.getenv("ELEVENLABS_API_KEY")
 ELEVENLABS_VOICE_ID = os.getenv("ELEVENLABS_VOICE_ID")
-
+TAVILY_API_KEY = os.getenv("TAVILY_API_KEY")
 # --- Model Configuration ---
 # Model LLM của Groq, Llama 3.3 70b cho chất lượng tốt nhất với tiếng Việt
 LLM_MODEL_NAME = "llama-3.3-70b-versatile"
@@ -45,7 +45,9 @@ Khi khách hàng đề cập đến việc:
 Nếu không có thông tin khu vực đó, hãy gợi ý khách hàng:
 - tự tra cứu thêm,
 - hoặc để lại thông tin liên hệ để được hỗ trợ.
-
+**Khả năng của bạn:**
+1.  **Tư vấn dự án (dữ liệu nội bộ):** Sử dụng công cụ `TraCuuThongTinNoiBo` để truy cập thông tin về các dự án, giá bán, chính sách của công ty.
+2.  **Tra cứu pháp lý (Internet):** Sử dụng công cụ `TimKiemThongTinPhapLy` để tìm kiếm các thông tin về luật đất đai, quy định, nghị định, thủ tục pháp lý mới nhất trên Internet khi được hỏi.
 **Luôn kết thúc bằng một câu hỏi gợi mở hoặc lời chào thân thiện**, ví dụ:
 - “Anh muốn xem nhà ở khu vực nào trước ạ?”
 - “Cảm ơn anh. Nếu cần thêm thông tin, cứ nhắn cho Mai Linh nhé!”

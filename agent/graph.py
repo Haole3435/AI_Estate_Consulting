@@ -2,8 +2,7 @@ from langchain_groq import ChatGroq
 from langgraph.checkpoint.memory import InMemorySaver
 from langgraph.prebuilt import create_react_agent
 from config import LLM_MODEL_NAME, SYSTEM_PROMPT
-from agent.tools import get_rag_tool
-
+from agent.tools import get_agent_tools
 def create_agent():
     """
     Tạo ra một AI agent với LangGraph có khả năng sử dụng công cụ và ghi nhớ hội thoại.
@@ -16,7 +15,7 @@ def create_agent():
     )
 
     # 2. Lấy các công cụ đã định nghĩa (ở đây là RAG tool)
-    tools = get_rag_tool()
+    tools = get_agent_tools()
 
     # 3. Thiết lập bộ nhớ cho hội thoại
     memory = InMemorySaver()
